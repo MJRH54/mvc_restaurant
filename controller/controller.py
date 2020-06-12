@@ -360,7 +360,7 @@ class Controller():
         if(type(records) == list):
             if(len(records) == 1):
                 self.view.mostrar_detalle_reservacion_header("Datos del detalle de reservación por " + nombre + ". Fecha " + fecha)
-                self.view.mostrar_detalle_reservacion(records)
+                self.view.mostrar_detalle_reservacion(records[0])
                 self.view.mostrar_detalle_reservacion_midder()
                 self.view.mostrar_detalle_reservacion_footer()
             else:
